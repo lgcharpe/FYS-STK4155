@@ -265,6 +265,8 @@ print("The MSE is: %.05f; and the R2 is: %.02f" % (MSE_5, R2_5))
 for i in range(var_5.size):
     print("The variance of beta_%d is: %.08f" % (i, var_5[i]))
 
+#Doing Bootstrap
+
 print("Bootstraping 5th order polynomial")
 bMSE, bR2 = boot_OLS_FF(X, Y, F, x_k= 5)
 
@@ -282,6 +284,7 @@ plt.ylabel('Frequency')
 plt.title('Frequency of R2 results in bootstrap (5th order polynomial)')
 plt.show()
 
+#Doing Cross-Validation
 
 k = 10
 print("%d-fold cross-validation 5th order polynomial" % k)

@@ -41,6 +41,8 @@ plt.show()
 
 # OLS
 
+#Effect of complexity on MSE and R2, also finding best x_k
+
 nMSE = np.zeros(5)
 nR2 = np.zeros(5)
 
@@ -62,11 +64,15 @@ plt.ylabel('R2')
 plt.title('Change in R2 depending on the complexity of the model')
 plt.plot(range(1,6), nR2)
 
+#Printing the graph of each patch at the optimal x_k
+
 print("Fifth-order polynomial Model")
 MSE_5, R2_5, var_5 = OLS(X, Y, terrain1, X, Y, terrain1, 5)
 print("The MSE is: %.05f; and the R2 is: %.02f" % (MSE_5, R2_5))
 for i in range(var_5.size):
     print("The variance of beta_%d is: %.08f" % (i, var_5[i]))
+
+#Doing Bootstrapping
 
 print("Bootstraping 5th order polynomial")
 bMSE, bR2 = bootstrap(X, Y, terrain1, x_k= 5, method='OLS')
@@ -85,6 +91,7 @@ plt.ylabel('Frequency')
 plt.title('Frequency of R2 results in bootstrap (5th order polynomial)')
 plt.show()
 
+# Doing Cross-Validation
 
 k = 10
 print("%d-fold cross-validation 5th order polynomial" % k)
@@ -147,6 +154,8 @@ plt.ylabel('R2')
 plt.title('Variation of R2 depending on lambda (5th order polynomial)')
 plt.show()
 
+#Effect of complexity on MSE and R2, also finding best x_k
+
 nMSE = np.zeros(5)
 nR2 = np.zeros(5)
 
@@ -172,11 +181,15 @@ plt.ylabel('R2')
 plt.title('Change in R2 depending on the complexity of the model')
 plt.plot(range(1,6), nR2)
 
+#Printing the graph of each patch at the optimal lambda and x_k
+
 print("Fifth-order polynomial Model")
 MSE_5, R2_5, var_5 = Ridge(X, Y, terrain1, X, Y, terrain1, lam=opt_lam, k=bk)
 print("The MSE is: %.05f; and the R2 is: %.02f" % (MSE_5, R2_5))
 for i in range(var_5.size):
     print("The variance of beta_%d is: %.08f" % (i, var_5[i]))
+
+#Doing Bootstrapping
 
 print("Bootstraping 5th order polynomial")
 bMSE, bR2 = bootstrap(X, Y, terrain1, lam=opt_lam, x_k= bk, method='Ridge')
@@ -195,6 +208,7 @@ plt.ylabel('Frequency')
 plt.title('Frequency of R2 results in bootstrap (5th order polynomial)')
 plt.show()
 
+# Doing Cross-Validation
 
 k = 10
 print("%d-fold cross-validation 5th order polynomial" % k)

@@ -237,6 +237,8 @@ opt_lam = (min_lambda_MSE + min_lambda_R2)/2
 nMSE = np.zeros(5)
 nR2 = np.zeros(5)
 
+# Finding the optimal x_k
+
 bk = 1
 
 for x_k in range(1,6):
@@ -258,11 +260,15 @@ plt.ylabel('R2')
 plt.title('Change in R2 depending on the complexity of the model')
 plt.plot(range(1,6), nR2)
 
+# Graphing the prediction of the best x_k
+
 print("%dth order polynomial Model" % bk)
 MSE_5, R2_5, var_5 = Lasso_FF(X, Y, F, lam=opt_lam, k=bk)
 print("The MSE is: %.05f; and the R2 is: %.02f" % (MSE_5, R2_5))
 for i in range(var_5.size):
     print("The variance of beta_%d is: %.08f" % (i, var_5[i]))
+
+# Doing Bootstraping
 
 print("Bootstraping %dth order polynomial" % bk)
 bMSE, bR2 = boot_Lasso_FF(X, Y, F, lam=opt_lam, x_k= bk)
@@ -281,6 +287,7 @@ plt.ylabel('Frequency')
 plt.title(('Frequency of R2 results in bootstrap (%dth order polynomial)' % bk))
 plt.show()
 
+# Doing Cross-Validation
 
 k = 10
 print("%d-fold cross-validation %dth order polynomial" % (k, 5))

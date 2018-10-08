@@ -227,6 +227,8 @@ plt.ylabel('R2')
 plt.title('Variation of R2 depending on lambda (5th order polynomial)')
 plt.show()
 
+#Finding the best complexity for the model
+
 nMSE = np.zeros(5)
 nR2 = np.zeros(5)
 
@@ -251,11 +253,15 @@ plt.ylabel('R2')
 plt.title('Change in R2 depending on the complexity of the model')
 plt.plot(range(1,6), nR2)
 
+#Printing the best complexity model
+
 print("Fifth-order polynomial Model")
 MSE_5, R2_5, var_5 = Ridge_FF(X, Y, F, lam=0.0012, k=bk)
 print("The MSE is: %.05f; and the R2 is: %.02f" % (MSE_5, R2_5))
 for i in range(var_5.size):
     print("The variance of beta_%d is: %.08f" % (i, var_5[i]))
+
+#Doing Bootstrap
 
 print("Bootstraping 5th order polynomial")
 bMSE, bR2 = boot_Ridge_FF(X, Y, F, x_k= bk)
@@ -274,6 +280,7 @@ plt.ylabel('Frequency')
 plt.title('Frequency of R2 results in bootstrap (5th order polynomial)')
 plt.show()
 
+#Doing Cross-validation
 
 k = 10
 print("%d-fold cross-validation 5th order polynomial" % k)
