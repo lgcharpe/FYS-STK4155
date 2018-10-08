@@ -1,0 +1,171 @@
+--------------------------------------------------------
+OLS
+--------------------------------------------------------
+
+Fifth-order polynomial Model
+The MSE is: 0.00536; and the R2 is: 0.85
+The variance of beta_0 is: 0.00013775
+The variance of beta_1 is: 0.01728379
+The variance of beta_2 is: 0.01728379
+The variance of beta_3 is: 0.40298617
+The variance of beta_4 is: 0.24581194
+The variance of beta_5 is: 0.40298617
+The variance of beta_6 is: 2.03362633
+The variance of beta_7 is: 1.11697637
+The variance of beta_8 is: 1.11697637
+The variance of beta_9 is: 2.03362633
+The variance of beta_10 is: 2.21791837
+The variance of beta_11 is: 1.29286033
+The variance of beta_12 is: 1.11939106
+The variance of beta_13 is: 1.29286033
+The variance of beta_14 is: 2.21791837
+The variance of beta_15 is: 0.34105076
+The variance of beta_16 is: 0.25775163
+The variance of beta_17 is: 0.24518305
+The variance of beta_18 is: 0.24518305
+The variance of beta_19 is: 0.25775163
+The variance of beta_20 is: 0.34105076
+
+Bootstraping 5th order polynomial
+The average MSE is: 0.00838; and the average R2 is: 0.71
+The average variance for beta_0 is: 0.00021555
+The average variance for beta_1 is: 0.02704500
+The average variance for beta_2 is: 0.02704500
+The average variance for beta_3 is: 0.63057688
+The average variance for beta_4 is: 0.38463685
+The average variance for beta_5 is: 0.63057689
+The average variance for beta_6 is: 3.18213841
+The average variance for beta_7 is: 1.74780064
+The average variance for beta_8 is: 1.74780064
+The average variance for beta_9 is: 3.18213841
+The average variance for beta_10 is: 3.47051133
+The average variance for beta_11 is: 2.02301693
+The average variance for beta_12 is: 1.75157906
+The average variance for beta_13 is: 2.02301693
+The average variance for beta_14 is: 3.47051133
+The average variance for beta_15 is: 0.53366280
+The average variance for beta_16 is: 0.40331960
+The average variance for beta_17 is: 0.38365279
+The average variance for beta_18 is: 0.38365279
+The average variance for beta_19 is: 0.40331960
+The average variance for beta_20 is: 0.53366280
+
+10-fold cross-validation 5th order polynomial
+The test average MSE is: 0.00474; the test average R^2-score is: 0.94
+The train average MSE is: 0.00469; the train average R^2-score is: 0.94
+
+--------------------------------------------------------
+Ridge
+--------------------------------------------------------
+
+The best lambda for the MSE is: 0.0011; and the best for the R2 is: 0.0013
+
+Fifth-order polynomial Model
+The MSE is: 0.00418; and the R2 is: 0.89
+The variance of beta_0 is: 0.00010737
+The variance of beta_1 is: 0.01347130
+The variance of beta_2 is: 0.01347130
+The variance of beta_3 is: 0.31409470
+The variance of beta_4 is: 0.19159027
+The variance of beta_5 is: 0.31409470
+The variance of beta_6 is: 1.58504512
+The variance of beta_7 is: 0.87059157
+The variance of beta_8 is: 0.87059157
+The variance of beta_9 is: 1.58504512
+The variance of beta_10 is: 1.72868566
+The variance of beta_11 is: 1.00767870
+The variance of beta_12 is: 0.87247362
+The variance of beta_13 is: 1.00767870
+The variance of beta_14 is: 1.72868566
+The variance of beta_15 is: 0.26582112
+The variance of beta_16 is: 0.20089628
+The variance of beta_17 is: 0.19110010
+The variance of beta_18 is: 0.19110010
+The variance of beta_19 is: 0.20089628
+The variance of beta_20 is: 0.26582112
+
+Bootstraping 5th order polynomial
+The average MSE is: 0.00750; and the average R2 is: 0.77
+The average variance for beta_0 is: 0.00019292
+The average variance for beta_1 is: 0.02420646
+The average variance for beta_2 is: 0.02420646
+The average variance for beta_3 is: 0.56439389
+The average variance for beta_4 is: 0.34426680
+The average variance for beta_5 is: 0.56439389
+The average variance for beta_6 is: 2.84815305
+The average variance for beta_7 is: 1.56435801
+The average variance for beta_8 is: 1.56435801
+The average variance for beta_9 is: 2.84815305
+The average variance for beta_10 is: 3.10625943
+The average variance for beta_11 is: 1.81068863
+The average variance for beta_12 is: 1.56773986
+The average variance for beta_13 is: 1.81068863
+The average variance for beta_14 is: 3.10625943
+The average variance for beta_15 is: 0.47765154
+The average variance for beta_16 is: 0.36098869
+The average variance for beta_17 is: 0.34338602
+The average variance for beta_18 is: 0.34338602
+The average variance for beta_19 is: 0.36098869
+The average variance for beta_20 is: 0.47765154
+
+10-fold cross-validation 5th order polynomial
+The test average MSE is: 0.00396; the test average R^2-score is: 0.95
+The train average MSE is: 0.00394; the train average R^2-score is: 0.95
+
+--------------------------------------------------------
+Lasso
+--------------------------------------------------------
+
+The best lambda for the MSE is: 0.0001; and the best for the R2 is: 0.0001
+
+5th order polynomial Model
+The MSE is: 0.00960; and the R2 is: 0.82
+The variance of beta_0 is: 0.00024681
+The variance of beta_1 is: 0.03096710
+The variance of beta_2 is: 0.03096710
+The variance of beta_3 is: 0.72202398
+The variance of beta_4 is: 0.44041740
+The variance of beta_5 is: 0.72202398
+The variance of beta_6 is: 3.64361632
+The variance of beta_7 is: 2.00126899
+The variance of beta_8 is: 2.00126899
+The variance of beta_9 is: 3.64361632
+The variance of beta_10 is: 3.97380947
+The variance of beta_11 is: 2.31639752
+The variance of beta_12 is: 2.00559536
+The variance of beta_13 is: 2.31639752
+The variance of beta_14 is: 3.97380947
+The variance of beta_15 is: 0.61105528
+The variance of beta_16 is: 0.46180955
+The variance of beta_17 is: 0.43929062
+The variance of beta_18 is: 0.43929062
+The variance of beta_19 is: 0.46180955
+The variance of beta_20 is: 0.61105528
+
+Bootstraping 5th order polynomial
+The average MSE is: 0.01097; and the average R2 is: 0.75
+The average variance for beta_0 is: 0.00028213
+The average variance for beta_1 is: 0.03539875
+The average variance for beta_2 is: 0.03539875
+The average variance for beta_3 is: 0.82535150
+The average variance for beta_4 is: 0.50344472
+The average variance for beta_5 is: 0.82535150
+The average variance for beta_6 is: 4.16504757
+The average variance for beta_7 is: 2.28766693
+The average variance for beta_8 is: 2.28766693
+The average variance for beta_9 is: 4.16504757
+The average variance for beta_10 is: 4.54249405
+The average variance for beta_11 is: 2.64789292
+The average variance for beta_12 is: 2.29261244
+The average variance for beta_13 is: 2.64789292
+The average variance for beta_14 is: 4.54249405
+The average variance for beta_15 is: 0.69850228
+The average variance for beta_16 is: 0.52789826
+The average variance for beta_17 is: 0.50215670
+The average variance for beta_18 is: 0.50215670
+The average variance for beta_19 is: 0.52789826
+The average variance for beta_20 is: 0.69850228
+
+10-fold cross-validation 5th order polynomial
+The test average MSE is: 0.00865; the test average R^2-score is: 0.89
+The train average MSE is: 0.00865; the train average R^2-score is: 0.89
