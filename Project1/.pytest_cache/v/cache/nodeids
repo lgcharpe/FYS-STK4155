@@ -1,0 +1,6 @@
+[
+  "test_func.py::test_gen_matrix",
+  "test_func.py::test_OLS",
+  "test_func.py::test_Ridge",
+  "test_func.py::test_Lasso"
+]
