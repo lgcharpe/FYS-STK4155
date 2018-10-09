@@ -84,12 +84,12 @@ def OLS(X_train, Y_train, F_train, X_test, Y_test, F_test, k=1, graph=True):
     y_test = Y_test.ravel()
 
     xb_test = gen_def_matrix(x_test, y_test, k)
-    sklOLS = lm.LinearRegression()
-    sklOLS.fit(xb, f_train)
+    # sklOLS = lm.LinearRegression()
+    # sklOLS.fit(xb, f_train)
 
     f_predict = xb_test.dot(beta)
     F_predict = f_predict.reshape(F_test.shape)
-    sklpre = sklOLS.predict(xb_test)
+    #sklpre = sklOLS.predict(xb_test)
     
     # print(np.max(sklpre - f_predict))
     # print(np.min(sklpre - f_predict))
